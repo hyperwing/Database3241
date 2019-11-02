@@ -246,7 +246,7 @@ def printStore():
     r_num = 100000000
     for i in range(0, len(user_fname)):
         for j in range(0, len(user_lname)):
-            print("(\"" + str(store_name[i])  + "\", \"description " + str(letter) +"\", \"" 
+            print("(\"" + str(store_name[i * 5 + j]) + "\", \"description " + str(letter) +"\", \"" 
                 + str(acct_num) + "\", \""+ str(r_num) + "\", \"" + str(wallet_key)  + "\"," 
                 + "\"" + str(user_fname[i]) +"."+ str(user_lname[j]) + "@gmail.com\", \"imgur.com/" 
                 + str(store_name[i]) + "\"),")
