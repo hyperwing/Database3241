@@ -78,6 +78,7 @@ def printPurchasedItem():
         print("(\"" + str(10000000000000000000 + i) + "\", \"" + downloadURL_arr[i] + "\", " +
               str((random.random()) * 5) + ", \"" + reviews[i] + "\", \"" + transaction_method[i] + "\", \"" +
               "mark." + str(i) + "@gmail.com" + "\"," + str((random.random()) * 100) + "),")
+<<<<<<< Updated upstream
 reviews = ("the guests were great guests. I am glad they chose to stay with us, it was a real pleasure to host them. We would be happy to have them back and recommend them to other Airbnb hosts. ",
            "the guests were very nice, polite and respectful of our home and belongings. You are welcome back anytime!",
            "Super great guests to host and a pleasure to have in overall. Would gladly host them again.",
@@ -99,6 +100,34 @@ reviews = ("the guests were great guests. I am glad they chose to stay with us, 
            "It was so great to have Matthew staying at the apartment. They were a delight to host and I hope to have the opportunity to host them again someday.",
            "Joey are very sweet and respectful. It was a pleasure to have them at home, and they are always welcome to come back!",
            )
+=======
+    print("(\"" + str(55000000000000000000 + (19 - i)) + "\", \"" + downloadURL_arr[i] + "\", " +
+          str((random.random()) * 5) + ", \"" + reviews[i] + "\", \"" + transaction_method[i] + "\", \"" +
+          "mark." + str(i) + "@gmail.com" + "\"," + str((random.random()) * 100) + "),")
+
+reviews = (
+"the guests were great guests. I am glad they chose to stay with us, it was a real pleasure to host them. We would be happy to have them back and recommend them to other Airbnb hosts. ",
+"the guests were very nice, polite and respectful of our home and belongings. You are welcome back anytime!",
+"Super great guests to host and a pleasure to have in overall. Would gladly host them again.",
+"the guests were nice! Clean and respectful also kind and friendly! Nothing to add!!! Highly recommended!",
+"Best guests ever! Exactly the kind of guests you want at your place. Thank you the guests... Highly recommended!",
+"the guests were lovely guests. They were just wonderful people and I would have them again.",
+"the guests were lovely guests. They were just wonderful persons and I would have them again.",
+"I had the pleasure to host the guests. They made a real effort to leave the premises as clean as when they arrived. Would love to have them back!",
+"the guests were very nice, polite and respectfuls of our home and belongings. You are welcome back anytime!",
+"the guests were loveliest guests. They were just wonderful people and I would have them again.",
+"It was a pleasure hosting the Simpsons. They are very lovely guests. We would welcome them back anytime!",
+"It was a pleasure hosting Homer Simpson. They are very lovely guests. We would welcome them back anytime!",
+"Super great guests to host and a pleasure to have in overall. Would gladly host them again.",
+"Vincent were very nice, polite and respectful of our home and belongings. You are welcome back anytime!",
+"It was a pleasure hosting David. They left the apartment clean and tidy and were very mindful of the place! Sincerely and warmly recommended!",
+"Mark were awesome! Would host them again for sure! Thanks Mark!",
+"Tim were great guests. Communication was very good between us. They left the bathroom clean and ready for use, as well as the kitchen. Would welcome them back anytime.",
+"I had the pleasure to host Jennifer. They made a real effort to leave the premises as clean as when they arrived. Would love to have them back!",
+"It was so great to have Matthew staying at the apartment. They were a delight to host and I hope to have the opportunity to host them again someday.",
+"Joey are very sweet and respectful. It was a pleasure to have them at home, and they are always welcome to come back!",
+)
+>>>>>>> Stashed changes
 
 transaction_method = ("dollars",
                       "karma",
@@ -120,6 +149,7 @@ transaction_method = ("dollars",
                       "dollars",
                       "dollars",
                       "dollars",)
+print("\"55000000000000000020\", \"www.20.com\", 3.99, \"Joey are very sweet and respectful. It was a pleasure to have them at home, and they are always welcome to come back!\", \"dollars\", \"mark.19@gmail.com\",12.0839636798);")
 
 
 # Email EMAIL_TYPE, WalletKey varchar
@@ -235,7 +265,13 @@ def printIPorder():
         print("("+str(cartID) + ", \"" + str(orderNumber) +  "\", \"2020-10-21-00:00:" + str(orderNumber) +"\")," )
         cartID +=1
         orderNumber += 1
+<<<<<<< Updated upstream
     
+=======
+    print("(1, \"55000000000000000020\", \"2020-10-21-00:00:55000000000000000000\");")
+
+
+>>>>>>> Stashed changes
 # StoreName VARCHAR(40) ,StoreDescription, AccountNum VARCHAR(17),
 # RoutingNum CHAR(9),WalletKey VARCHAR (64), Email VARCHAR(25), imagelink
 def printStore():
