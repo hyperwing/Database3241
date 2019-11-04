@@ -219,7 +219,8 @@ INSERT INTO IPORDER VALUES
 (17, "55000000000000000016", "2020-10-21-00:00:55000000000000000016"),
 (18, "55000000000000000017", "2020-10-21-00:00:55000000000000000017"),
 (19, "55000000000000000018", "2020-10-21-00:00:55000000000000000018"),
-(20, "55000000000000000019", "2020-10-21-00:00:55000000000000000019");
+(20, "55000000000000000019", "2020-10-21-00:00:55000000000000000019"),
+(1, "55000000000000000020", "2020-10-21-00:00:55000000000000000000");
 
 INSERT INTO STORE VALUES
 ("ms", "description a", "100000000000000000", "100000000", "21111111111111111111111111111111","jim.smith@gmail.com", "imgur.com/ms.jpg"),
@@ -459,29 +460,29 @@ INSERT INTO Follow VALUES
 ("amy.weigel@gmail.com", "quor", 1), 
 ("amy.freeman@gmail.com", "rt", 1);
 
+
 INSERT INTO PurchasedItem VALUES
-("55000000000000000019", "www.1.com", 2.09426914481, "the guests were great guests. I am glad they chose to stay with us, it was a real pleasure to host them. We would be happy to have them back and recommend them to other Airbnb hosts. ", "dollars", "mark.0@gmail.com",33.9028692751),
-("55000000000000000018", "www.2.com", 2.0444341971, "the guests were very nice, polite and respectful of our home and belongings. You are welcome back anytime!", "karma", "mark.1@gmail.com",72.5035787272),
-("55000000000000000017", "www.3.com", 0.483418027064, "Super great guests to host and a pleasure to have in overall. Would gladly host them again.", "karma", "mark.2@gmail.com",67.6619171747),
-("55000000000000000016", "www.4.com", 4.25137317693, "the guests were nice! Clean and respectful also kind and friendly! Nothing to add!!! Highly recommended!", "crypto", "mark.3@gmail.com",9.99092611361),
-("55000000000000000015", "www.5.com", 4.92925632149, "Best guests ever! Exactly the kind of guests you want at your place. Thank you the guests... Highly recommended!", "crypto", "mark.4@gmail.com",1.93886789078),
-("55000000000000000014", "www.6.com", 1.4505580424, "the guests were lovely guests. They were just wonderful people and I would have them again.", "crypto", "mark.5@gmail.com",46.196818999),
-("55000000000000000013", "www.7.com", 3.5355616433, "the guests were lovely guests. They were just wonderful persons and I would have them again.", "dollars", "mark.6@gmail.com",47.2912734841),
-("55000000000000000012", "www.8.com", 2.41016155065, "I had the pleasure to host the guests. They made a real effort to leave the premises as clean as when they arrived. Would love to have them back!", "dollars", "mark.7@gmail.com",92.8557821364),
-("55000000000000000011", "www.9.com", 1.62917472882, "the guests were very nice, polite and respectfuls of our home and belongings. You are welcome back anytime!", "dollars", "mark.8@gmail.com",4.87810107807),
-("55000000000000000010", "www.10.com", 1.42170295467, "the guests were loveliest guests. They were just wonderful people and I would have them again.", "dollars", "mark.9@gmail.com",39.4880046222),
-("55000000000000000009", "www.11.com", 2.1499268322, "It was a pleasure hosting the Simpsons. They are very lovely guests. We would welcome them back anytime!", "dollars", "mark.10@gmail.com",2.11469571658),
-("55000000000000000008", "www.12.com", 1.19284141471, "It was a pleasure hosting Homer Simpson. They are very lovely guests. We would welcome them back anytime!", "dollars", "mark.11@gmail.com",94.4919221994),
-("55000000000000000007", "www.13.com", 3.42217068215, "Super great guests to host and a pleasure to have in overall. Would gladly host them again.", "dollars", "mark.12@gmail.com",25.823950424),
-("55000000000000000006", "www.14.com", 0.925912010344, "Vincent were very nice, polite and respectful of our home and belongings. You are welcome back anytime!", "dollars", "mark.13@gmail.com",28.6542670098),
-("55000000000000000005", "www.15.com", 0.535875590604, "It was a pleasure hosting David. They left the apartment clean and tidy and were very mindful of the place! Sincerely and warmly recommended!", "dollars", "mark.14@gmail.com",27.5709755381),
-("55000000000000000004", "www.16.com", 4.7194976148, "Mark were awesome! Would host them again for sure! Thanks Mark!", "dollars", "mark.15@gmail.com",47.3017771962),
-("55000000000000000003", "www.17.com", 4.0805922364, "Tim were great guests. Communication was very good between us. They left the bathroom clean and ready for use, as well as the kitchen. Would welcome them back anytime.", "dollars", "mark.16@gmail.com",56.0647700706),
-("55000000000000000002", "www.18.com", 4.36459923739, "I had the pleasure to host Jennifer. They made a real effort to leave the premises as clean as when they arrived. Would love to have them back!", "dollars", "mark.17@gmail.com",5.68154563099),
-("55000000000000000001", "www.19.com", 4.64643750153, "It was so great to have Matthew staying at the apartment. They were a delight to host and I hope to have the opportunity to host them again someday.", "dollars", "mark.18@gmail.com",11.4229579867),
-("55000000000000000000", "www.20.com", 3.99767540372, "Joey are very sweet and respectful. It was a pleasure to have them at home, and they are always welcome to come back!", "dollars", "mark.19@gmail.com",12.0839636798);
-
-
+("55000000000000000019", "www.1.com", 3.048996434174149, "the guests were great guests. I am glad they chose to stay with us, it was a real pleasure to host them. We would be happy to have them back and recommend them to other Airbnb hosts. ", "dollars", "mark.0@gmail.com",99.33208202906953),
+("55000000000000000018", "www.2.com", 0.8680495384458897, "the guests were very nice, polite and respectful of our home and belongings. You are welcome back anytime!", "karma", "mark.1@gmail.com",50.04665869293616),
+("55000000000000000017", "www.3.com", 2.0177938852525585, "Super great guests to host and a pleasure to have in overall. Would gladly host them again.", "karma", "mark.2@gmail.com",14.623618117918479),
+("55000000000000000016", "www.4.com", 4.869543777695546, "the guests were nice! Clean and respectful also kind and friendly! Nothing to add!!! Highly recommended!", "crypto", "mark.3@gmail.com",98.8027487856528),
+("55000000000000000015", "www.5.com", 3.3875598946660994, "Best guests ever! Exactly the kind of guests you want at your place. Thank you the guests... Highly recommended!", "crypto", "mark.4@gmail.com",16.935190939999966),
+("55000000000000000014", "www.6.com", 4.702979659348147, "the guests were lovely guests. They were just wonderful people and I would have them again.", "crypto", "mark.5@gmail.com",63.839947861119875),
+("55000000000000000013", "www.7.com", 0.3003035629371109, "the guests were lovely guests. They were just wonderful persons and I would have them again.", "dollars", "mark.6@gmail.com",13.437210469339956),
+("55000000000000000012", "www.8.com", 4.572771189784688, "I had the pleasure to host the guests. They made a real effort to leave the premises as clean as when they arrived. Would love to have them back!", "dollars", "mark.7@gmail.com",44.80111223750789),
+("55000000000000000011", "www.9.com", 2.4678817409476133, "the guests were very nice, polite and respectfuls of our home and belongings. You are welcome back anytime!", "dollars", "mark.8@gmail.com",71.2854456723486),
+("55000000000000000010", "www.10.com", 3.237479300402871, "the guests were loveliest guests. They were just wonderful people and I would have them again.", "dollars", "mark.9@gmail.com",62.91459050346836),
+("55000000000000000009", "www.11.com", 1.3679798657913111, "It was a pleasure hosting the Simpsons. They are very lovely guests. We would welcome them back anytime!", "dollars", "mark.10@gmail.com",68.8065487167263),
+("55000000000000000008", "www.12.com", 4.4982296448760835, "It was a pleasure hosting Homer Simpson. They are very lovely guests. We would welcome them back anytime!", "dollars", "mark.11@gmail.com",2.686495756745655),
+("55000000000000000007", "www.13.com", 0.010914605890611218, "Super great guests to host and a pleasure to have in overall. Would gladly host them again.", "dollars", "mark.12@gmail.com",66.81033153988855),
+("55000000000000000006", "www.14.com", 0.12873765188926356, "Vincent were very nice, polite and respectful of our home and belongings. You are welcome back anytime!", "dollars", "mark.13@gmail.com",15.932982397716577),
+("55000000000000000005", "www.15.com", 3.920342314085181, "It was a pleasure hosting David. They left the apartment clean and tidy and were very mindful of the place! Sincerely and warmly recommended!", "dollars", "mark.14@gmail.com",53.36187715466741),
+("55000000000000000004", "www.16.com", 4.670890159695761, "Mark were awesome! Would host them again for sure! Thanks Mark!", "dollars", "mark.15@gmail.com",35.310337541638106),
+("55000000000000000003", "www.17.com", 3.4002122090896987, "Tim were great guests. Communication was very good between us. They left the bathroom clean and ready for use, as well as the kitchen. Would welcome them back anytime.", "dollars", "mark.16@gmail.com",21.172964103950818),
+("55000000000000000002", "www.18.com", 0.3498009106398514, "I had the pleasure to host Jennifer. They made a real effort to leave the premises as clean as when they arrived. Would love to have them back!", "dollars", "mark.17@gmail.com",48.342456790702435),
+("55000000000000000001", "www.19.com", 3.3966223804418276, "It was so great to have Matthew staying at the apartment. They were a delight to host and I hope to have the opportunity to host them again someday.", "dollars", "mark.18@gmail.com",32.024354312565876),
+("55000000000000000000", "www.20.com", 4.446691065844993, "Joey are very sweet and respectful. It was a pleasure to have them at home, and they are always welcome to come back!", "dollars", "mark.19@gmail.com",4.170966068970405),
+("55000000000000000020", "www.20.com", 3.99, "Joey are very sweet and respectful. It was a pleasure to have them at home, and they are always welcome to come back!", "dollars", "mark.19@gmail.com",12.0839636798);
 
 INSERT INTO IP_KEYWORDS VALUES
 ("developer", "www.1.com"),

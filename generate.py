@@ -135,9 +135,6 @@ def printPurchasedItem():
         print("(\"" + str(55000000000000000000 + (19 - i)) + "\", \"" + downloadURL_arr[i] + "\", " +
               str((random.random()) * 5) + ", \"" + reviews[i] + "\", \"" + transaction_method[i] + "\", \"" +
               "mark." + str(i) + "@gmail.com" + "\"," + str((random.random()) * 100) + "),")
-    print("(\"" + str(55000000000000000000 + (19 - i)) + "\", \"" + downloadURL_arr[i] + "\", " +
-          str((random.random()) * 5) + ", \"" + reviews[i] + "\", \"" + transaction_method[i] + "\", \"" +
-          "mark." + str(i) + "@gmail.com" + "\"," + str((random.random()) * 100) + "),")
     print("(\"55000000000000000020\", \"www.20.com\", 3.99, \"Joey are very sweet and respectful. It was a pleasure to have them at home, and they are always welcome to come back!\", \"dollars\", \"mark.19@gmail.com\",12.0839636798);")
 
 
