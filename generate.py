@@ -138,6 +138,7 @@ def printPurchasedItem():
     print("(\"" + str(55000000000000000000 + (19 - i)) + "\", \"" + downloadURL_arr[i] + "\", " +
           str((random.random()) * 5) + ", \"" + reviews[i] + "\", \"" + transaction_method[i] + "\", \"" +
           "mark." + str(i) + "@gmail.com" + "\"," + str((random.random()) * 100) + "),")
+    print("(\"55000000000000000020\", \"www.20.com\", 3.99, \"Joey are very sweet and respectful. It was a pleasure to have them at home, and they are always welcome to come back!\", \"dollars\", \"mark.19@gmail.com\",12.0839636798);")
 
 
 reviews = (
@@ -305,6 +306,7 @@ def printIPorder():
         print("(" + str(cartID) + ", \"" + str(orderNumber) + "\", \"2020-10-21-00:00:" + str(orderNumber) + "\"),")
         cartID += 1
         orderNumber += 1
+    print("(1, \"55000000000000000020\", \"2020-10-21-00:00:55000000000000000000\");")
 
 
 # StoreName VARCHAR(40) ,StoreDescription, AccountNum VARCHAR(17),
@@ -378,12 +380,12 @@ def main():
     # printIPorder()
     # printStore()
     # printAnnouncements()
-    # printPurchasedItem()
+    printPurchasedItem()
     # printSocialMediaSite()
     # generateDownloadURL()
     # printIPItem()
     # printIPKeywords()
     # printPictures()
-    printPostOn()
+    # printPostOn()
 if __name__ == '__main__':
     main()
