@@ -27,9 +27,15 @@ def generateDownloadURL():
         curr += 1
 
 def printPostOn():
-    print("INSERT INTO PostOn VALUES")
-    for company in store_name:
-        print("(\"www." + company + ".com\", \"" + company + "\"),")
+   print("INSERT INTO PostOn VALUES")
+   count = 0
+   for company in store_name:
+       print("(\"www." + company + ".com\", \"" + company + "\"),")
+       if count % 2 == 0:
+           print("(\"www." + company + "2.com\", \"" + company + "\"),")
+       if count <= 5:
+           print("(\"www." + company + "3.com\", \"" + company + "\"),")
+       count += 1
 
 def printPictures():
     generateDownloadURL()
@@ -342,12 +348,17 @@ def printAnnouncements():
 
 
 def printSocialMediaSite():
-    print("INSERT INTO SOCIALMEDIASITE VALUES")
+   print("INSERT INTO SOCIALMEDIASITE VALUES")
 
-    for i in range(0, 20):
-        print("(\"www." + store_name[i] + ".com\", \"@" + store_name[i]
-              + "\", \"" + social_media[i % 5] + "\"),")
-
+   for i in range(0, 20):
+       print("(\"www." + store_name[i] + ".com\", \"@" + store_name[i]
+             + "\", \"" + social_media[i % 5] + "\"),")
+       if i % 2 == 0:
+           print("(\"www." + store_name[i] + "2.com\", \"@" + store_name[i]
+                 + "2\", \"" + social_media[(i + 1) % 5] + "\"),")
+       if i <= 5:
+           print("(\"www." + store_name[i] + "3.com\", \"@" + store_name[i]
+                 + "3\", \"" + social_media[(i + 2) % 5] + "\"),")
 
 def printBuyerPurchasesWith():
     print("INSERT INTO BuyerPurchasesWith VALUES")
@@ -377,12 +388,12 @@ def main():
     # printIPorder()
     # printStore()
     # printAnnouncements()
-    printPurchasedItem()
-    # printSocialMediaSite()
+    # printPurchasedItem()
+    printSocialMediaSite()
     # generateDownloadURL()
     # printIPItem()
     # printIPKeywords()
     # printPictures()
-    # printPostOn()
+    printPostOn()
 if __name__ == '__main__':
     main()
