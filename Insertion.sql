@@ -244,6 +244,15 @@ INSERT INTO STORE VALUES
 ("quor", "description s", "100000000000000018", "100000018", "21111111111111111111111111111129","amy.weigel@gmail.com", "imgur.com/quor.jpg"),
 ("rt", "description t", "100000000000000019", "100000019", "21111111111111111111111111111130","amy.freeman@gmail.com", "imgur.com/rt.jpg");
 
+INSERT INTO IPType VALUES
+("pdf"),
+("exe"),
+("zip"),
+("tar.gz"),
+("git"),
+("py"),
+("class");
+
 INSERT INTO IPItem VALUES
 ("www.1.com", "2020-10-21-00:00:0", "title_a", "categ_a", "description_a", ".exe", 1, "www.1.com/trial","ms"),
 ("www.2.com", "2020-10-21-00:00:1", "title_b", "categ_b", "description_b", ".exe", 1, "www.2.com/trial","google"),
