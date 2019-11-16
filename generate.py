@@ -5,8 +5,8 @@ user_fname = ("jim", "bob", "stacy", "amy")
 user_lname = ("smith", "jones", "kilpatrick", "weigel", "freeman")
 
 store_name = (
-"ms", "google", "amz", "aapl", "netflx", "ubr", "tsla", "spacex", "lyft", "fbook", "twit", "insta", "osu", "yt", "xkcd",
-"domin", "pjs", "red", "quor", "rt")
+    "ms", "google", "amz", "aapl", "netflx", "ubr", "tsla", "spacex", "lyft", "fbook", "twit", "insta", "osu", "yt", "xkcd",
+    "domin", "pjs", "red", "quor", "rt")
 social_media = ("twitter", "fbook", "reddit", "snapchat", "insta")
 payment_types = ("dollars", "credit", "debit", "karma", "crypto")
 
@@ -26,6 +26,7 @@ def generateDownloadURL():
         downloadURL_arr.append(base + str(curr) + end)
         curr += 1
 
+
 def printPostOn():
    print("INSERT INTO PostOn VALUES")
    count = 0
@@ -36,6 +37,7 @@ def printPostOn():
        if count <= 5:
            print("(\"www." + company + "3.com\", \"" + company + "\"),")
        count += 1
+
 
 def printPictures():
     generateDownloadURL()
@@ -50,7 +52,8 @@ def printPictures():
                   + user[1] + "\", NULL),")
             counter += 1
     for storeName in store_name:
-        print("(\"imgur.com/" + storeName + ".jpg\", \"Store Banner\", \"Store Banner for " + storeName + "\", NULL),")
+        print("(\"imgur.com/" + storeName +
+              ".jpg\", \"Store Banner\", \"Store Banner for " + storeName + "\", NULL),")
     counter = 0
     for downloadURL in downloadURL_arr:
         print("(\"imgur.com/ipitem#" + str(counter) + ".jpg\", \"IP Item Picture\", \"Item Picture for IP Item found at "
@@ -70,24 +73,27 @@ def printPictures():
     print(";")
 
 
-
 def printIPKeywords():
     generateDownloadURL()
     print("INSERT INTO IP_KEYWORDS VALUES")
-    keywords = ("developer", "software", "portable", "security", "networking", "database", "sql", "checkpoints", "winner", "best")
+    keywords = ("developer", "software", "portable", "security",
+                "networking", "database", "sql", "checkpoints", "winner", "best")
     for i, keyword in enumerate(keywords):
         print("(\"" + keyword + "\", \"" + downloadURL_arr[i] + "\"),")
         print("(\"" + keyword + "\", \"" + downloadURL_arr[i + 1] + "\"),")
         if i < 9:
-            print("(\"" + keyword + "\", \"" + downloadURL_arr[int(round(2 * i) + 2)] + "\"),")
+            print("(\"" + keyword + "\", \"" +
+                  downloadURL_arr[int(round(2 * i) + 2)] + "\"),")
+
 
 def printIPItem():
-    print ("INSERT INTO IPItem VALUES")
+    print("INSERT INTO IPItem VALUES")
     title = "a"
     timeNum = 0
     for i in range(0, len(store_name)):
         print("(\"" + str(downloadURL_arr[i]) + "\", \"2020-10-21-00:00:"
-              + str(timeNum) + "\", \"title_" + str(title) + "\", \"categ_" + str(title)
+              + str(timeNum) + "\", \"title_" +
+              str(title) + "\", \"categ_" + str(title)
               + "\", \"description_" + str(title) + "\", \".exe\", 1, \""
               + str(downloadURL_arr[i]) + "/trial\",\"" + str(store_name[i]) + "\"),")
         timeNum += 1
@@ -145,26 +151,26 @@ def printPurchasedItem():
 
 
 reviews = (
-"the guests were great guests. I am glad they chose to stay with us, it was a real pleasure to host them. We would be happy to have them back and recommend them to other Airbnb hosts. ",
-"the guests were very nice, polite and respectful of our home and belongings. You are welcome back anytime!",
-"Super great guests to host and a pleasure to have in overall. Would gladly host them again.",
-"the guests were nice! Clean and respectful also kind and friendly! Nothing to add!!! Highly recommended!",
-"Best guests ever! Exactly the kind of guests you want at your place. Thank you the guests... Highly recommended!",
-"the guests were lovely guests. They were just wonderful people and I would have them again.",
-"the guests were lovely guests. They were just wonderful persons and I would have them again.",
-"I had the pleasure to host the guests. They made a real effort to leave the premises as clean as when they arrived. Would love to have them back!",
-"the guests were very nice, polite and respectfuls of our home and belongings. You are welcome back anytime!",
-"the guests were loveliest guests. They were just wonderful people and I would have them again.",
-"It was a pleasure hosting the Simpsons. They are very lovely guests. We would welcome them back anytime!",
-"It was a pleasure hosting Homer Simpson. They are very lovely guests. We would welcome them back anytime!",
-"Super great guests to host and a pleasure to have in overall. Would gladly host them again.",
-"Vincent were very nice, polite and respectful of our home and belongings. You are welcome back anytime!",
-"It was a pleasure hosting David. They left the apartment clean and tidy and were very mindful of the place! Sincerely and warmly recommended!",
-"Mark were awesome! Would host them again for sure! Thanks Mark!",
-"Tim were great guests. Communication was very good between us. They left the bathroom clean and ready for use, as well as the kitchen. Would welcome them back anytime.",
-"I had the pleasure to host Jennifer. They made a real effort to leave the premises as clean as when they arrived. Would love to have them back!",
-"It was so great to have Matthew staying at the apartment. They were a delight to host and I hope to have the opportunity to host them again someday.",
-"Joey are very sweet and respectful. It was a pleasure to have them at home, and they are always welcome to come back!",
+    "the guests were great guests. I am glad they chose to stay with us, it was a real pleasure to host them. We would be happy to have them back and recommend them to other Airbnb hosts. ",
+    "the guests were very nice, polite and respectful of our home and belongings. You are welcome back anytime!",
+    "Super great guests to host and a pleasure to have in overall. Would gladly host them again.",
+    "the guests were nice! Clean and respectful also kind and friendly! Nothing to add!!! Highly recommended!",
+    "Best guests ever! Exactly the kind of guests you want at your place. Thank you the guests... Highly recommended!",
+    "the guests were lovely guests. They were just wonderful people and I would have them again.",
+    "the guests were lovely guests. They were just wonderful persons and I would have them again.",
+    "I had the pleasure to host the guests. They made a real effort to leave the premises as clean as when they arrived. Would love to have them back!",
+    "the guests were very nice, polite and respectfuls of our home and belongings. You are welcome back anytime!",
+    "the guests were loveliest guests. They were just wonderful people and I would have them again.",
+    "It was a pleasure hosting the Simpsons. They are very lovely guests. We would welcome them back anytime!",
+    "It was a pleasure hosting Homer Simpson. They are very lovely guests. We would welcome them back anytime!",
+    "Super great guests to host and a pleasure to have in overall. Would gladly host them again.",
+    "Vincent were very nice, polite and respectful of our home and belongings. You are welcome back anytime!",
+    "It was a pleasure hosting David. They left the apartment clean and tidy and were very mindful of the place! Sincerely and warmly recommended!",
+    "Mark were awesome! Would host them again for sure! Thanks Mark!",
+    "Tim were great guests. Communication was very good between us. They left the bathroom clean and ready for use, as well as the kitchen. Would welcome them back anytime.",
+    "I had the pleasure to host Jennifer. They made a real effort to leave the premises as clean as when they arrived. Would love to have them back!",
+    "It was so great to have Matthew staying at the apartment. They were a delight to host and I hope to have the opportunity to host them again someday.",
+    "Joey are very sweet and respectful. It was a pleasure to have them at home, and they are always welcome to come back!",
 )
 
 transaction_method = ("dollars",
@@ -230,7 +236,8 @@ def printUsers():
         for j in range(0, len(user_lname)):
             user = [user_fname[i], user_lname[j]]
             print("(\"" + str(user[0]) + "." + str(user[1]) + "@gmail.com\", \"" +
-                  user[0] + user[1] + "1\", \"password\", \"" + str(phone_arr[counter]) + "\", \""
+                  user[0] + user[1] + "1\", \"password\", \"" +
+                  str(phone_arr[counter]) + "\", \""
                   + user[0] + "\", \"" + user[1] + "\"," + str(counter) + ", 1),")
 
             letter = chr(ord(letter) + 1)
@@ -257,7 +264,9 @@ def printMessage():
     counter = 0
     for i in range(0, 10):
         print("(\"2019-10-31-10:10:10:" + str(counter) + "\", \"Subject -" + letter + "\", \"content-"
-              + str(letter) + "\", \"" + str(user_fname[0]) + "." + str(user_lname[0]) + "@gmail.com\", \""
+              + str(letter) + "\", \"" +
+              str(user_fname[0]) + "." +
+              str(user_lname[0]) + "@gmail.com\", \""
               + str(user_fname[1]) + "." + str(user_lname[1]) + "@gmail.com\"),")
 
         letter = chr(ord(letter) + 1)
@@ -265,7 +274,9 @@ def printMessage():
 
     for i in range(0, 10):
         print("(\"2019-10-31-10:10:10:" + str(counter) + "\", \"Subject -" + letter + "\", \"content-"
-              + str(letter) + "\", \"" + str(user_fname[1]) + "." + str(user_lname[1]) + "@gmail.com\", \""
+              + str(letter) + "\", \"" +
+              str(user_fname[1]) + "." +
+              str(user_lname[1]) + "@gmail.com\", \""
               + str(user_fname[0]) + "." + str(user_lname[0]) + "@gmail.com\"),")
 
         letter = chr(ord(letter) + 1)
@@ -280,7 +291,8 @@ def printCart():
     for i in range(0, len(user_fname)):
         for j in range(0, len(user_lname)):
             user = [user_fname[i], user_lname[j]]
-            print("(" + str(cartID) + ", \"" + str(user[0]) + "." + str(user[1]) + "@gmail.com\"), ")
+            print("(" + str(cartID) + ", \"" +
+                  str(user[0]) + "." + str(user[1]) + "@gmail.com\"), ")
             cartID += 1
 
 
@@ -295,7 +307,7 @@ def printDebitCredit():
             user = [user_fname[i], user_lname[j]]
             print("(" + str(cardNumber) + ", 1234, \"2020-10-21-00:00:00\", \"" + str(user[0]) + "\", \""
                   + str(user[1]) + "\", \"AMEX\", \"#" + str(
-                        st_num) + "\", \"Elm St\", \"Columbus\", \"OH\", \"43201\", \"USA\" ),")
+                st_num) + "\", \"Elm St\", \"Columbus\", \"OH\", \"43201\", \"USA\" ),")
             cardNumber += 1
     print(";")
 
@@ -306,7 +318,8 @@ def printIPorder():
     cartID = 1
     orderNumber = 55000000000000000000
     for i in range(0, 20):
-        print("(" + str(cartID) + ", \"" + str(orderNumber) + "\", \"2020-10-21-00:00:" + str(orderNumber) + "\"),")
+        print("(" + str(cartID) + ", \"" + str(orderNumber) +
+              "\", \"2020-10-21-00:00:" + str(orderNumber) + "\"),")
         cartID += 1
         orderNumber += 1
     print("(1, \"55000000000000000020\", \"2020-10-21-00:00:55000000000000000000\");")
@@ -323,8 +336,11 @@ def printStore():
     for i in range(0, len(user_fname)):
         for j in range(0, len(user_lname)):
             print("(\"" + str(store_name[i * 5 + j]) + "\", \"description " + str(letter) + "\", \""
-                  + str(acct_num) + "\", \"" + str(r_num) + "\", \"" + str(wallet_key) + "\","
-                  + "\"" + str(user_fname[i]) + "." + str(user_lname[j]) + "@gmail.com\", \"imgur.com/"
+                  + str(acct_num) + "\", \"" + str(r_num) +
+                  "\", \"" + str(wallet_key) + "\","
+                  + "\"" +
+                  str(user_fname[i]) + "." + str(user_lname[j]
+                                                 ) + "@gmail.com\", \"imgur.com/"
                   + str(store_name[i * 5 + j]) + ".jpg\"),")
             r_num += 1
             acct_num += 1
@@ -345,7 +361,16 @@ def printAnnouncements():
         letter = chr(ord(letter) + 1)
 
     # URL VARCHAR(2000),AccountHandle VARCHAR(50),Type VARCHAR(20),
+downloadURL_arr = []
 
+def generateDownloadURL():
+    base = "www."
+    end = ".com"
+    curr = 1
+
+    for i in range(0, 20):
+        downloadURL_arr.append(base + str(curr) + end)
+        curr += 1
 
 def printSocialMediaSite():
    print("INSERT INTO SOCIALMEDIASITE VALUES")
@@ -360,6 +385,7 @@ def printSocialMediaSite():
            print("(\"www." + store_name[i] + "3.com\", \"@" + store_name[i]
                  + "3\", \"" + social_media[(i + 2) % 5] + "\"),")
 
+
 def printBuyerPurchasesWith():
     print("INSERT INTO BuyerPurchasesWith VALUES")
     cardNumber = 1000000000000000000
@@ -371,10 +397,57 @@ def printBuyerPurchasesWith():
             cardNumber += 1
 
 
+def printIPItem():
+    print("INSERT INTO IPItem VALUES")
+    title = "a"
+    timeNum = 0
+    for i in range(0, len(store_name)):
+        print("(\")" + str(downloadURL_arr[i]) + "\", \"2020-10-21-00:00:" + str(timeNum) + "\", \"title_" + str(title) + "\", \"categ_" + str(title) + "\", \"description_" + str(title)
+              + "\", \".exe\", 1, \"" + str(store_name[i]) + "\"),"
+              )
+        timeNum += 1
+        title = chr(ord(title) + 1)
+
+
+def printContain():
+    print("INSERT INTO Contain VALUES")
+    cartID = 1
+    for i in range(0, 20):
+        print("(\"" + str(downloadURL_arr[i]) + "\"," + str(cartID) + "),")
+        cartID += 1
+
+
+def printPostOn():
+    print("INSERT INTO PostOn VALUES")
+    for i in range(0, 20):
+        print("(\"" + str(downloadURL_arr[i]) +
+              "\",\"" + str(store_name[i]) + "\"),")
+
+
+def printFollow():
+    print("INSERT INTO Follow VALUES")
+    counter = 0
+    for i in range(0, len(user_fname)):
+        for j in range(0, len(user_lname)):
+            user = [user_fname[i], user_lname[j]]
+            print("(\"" +
+                  str(user[0]) + "." + str(user[1]) + "@gmail.com\", \"" + str(store_name[counter]) + "\", 1), ")
+            counter += 1
+
+def printIPType():
+    print("INSERT INTO IPType VALUES")
+    print("(\"pdf\"),")
+    print("(\"exe\"),")
+    print("(\"zip\"),")
+    print("(\"tar.gz\"),")
+    print("(\"git\"),")
+    print("(\"py\"),")
+    print("(\"class\")")
+
 def main():
     generateBTCWallets()
     generatePhone()
-
+    generateDownloadURL()
     generateGiftCards()
     # printGiftCards()
 
@@ -389,11 +462,14 @@ def main():
     # printStore()
     # printAnnouncements()
     # printPurchasedItem()
-    printSocialMediaSite()
+    # printSocialMediaSite()
     # generateDownloadURL()
     # printIPItem()
     # printIPKeywords()
     # printPictures()
-    printPostOn()
+    # printPostOn()
+    printIPType()
+
+
 if __name__ == '__main__':
     main()
