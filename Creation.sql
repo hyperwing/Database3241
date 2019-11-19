@@ -1,3 +1,4 @@
+-- CSE 3241 Au'19 Instructor: Bettina Bair
 PRAGMA foreign_keys=ON;  -- for sqlite to enforce foreign key constraints
 
 CREATE TABLE UserInfo( 
@@ -103,6 +104,7 @@ Trial VARCHAR(2000) NOT NULL,
 StoreName VARCHAR(40) NOT NULL,
 PRIMARY KEY(DownloadURL),
 FOREIGN KEY(StoreName) REFERENCES Store(StoreName) ON DELETE CASCADE ON UPDATE CASCADE
+FOREIGN KEY(FileType) REFERENCES IPType(FileType) ON DELETE CASCADE ON UPDATE CASCADE
 );
 CREATE TABLE Picture(
 ImageLink VARCHAR(2000),
