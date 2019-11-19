@@ -246,7 +246,7 @@ INSERT INTO STORE VALUES
 
 INSERT INTO IPType VALUES
 ("pdf"),
-("exe"),
+(".exe"),
 ("zip"),
 ("tar.gz"),
 ("git"),
